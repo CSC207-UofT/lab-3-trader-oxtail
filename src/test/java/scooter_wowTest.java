@@ -17,7 +17,7 @@ public class scooter_wowTest {
     }
 
     @Test(timeout = 50)
-    public void TestGetMaxSpeed() {
+    public void Test_GetMaxSpeed() {
         assertEquals(5, s.getMaxSpeed());
     }
 
@@ -28,7 +28,7 @@ public class scooter_wowTest {
     }
 
     @Test(timeout = 50)
-    public void TestDowngradeSpeed() {
+    public void testdowngradespeed() {
         s.downgradeSpeed();
         assertEquals(3, s.getMaxSpeed());
     }
