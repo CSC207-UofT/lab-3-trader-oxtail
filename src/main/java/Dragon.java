@@ -1,11 +1,16 @@
 /* A sample class that implements the given interfaces.
  */
 
-public class Dragon implements Drivable, Tradable{
+public class Dragon implements Drivable, Tradable,Domesticatable{
     private int maxSpeed;
 
     public Dragon() {
-        this.maxSpeed = 1;
+        this.maxSpeed = 2;
+    }
+
+    @Override
+    public String sound() {
+        return "roar boi!";
     }
 
     @Override
