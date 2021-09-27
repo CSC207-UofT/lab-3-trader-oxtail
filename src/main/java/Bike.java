@@ -1,21 +1,23 @@
+/* A Bike class that implements the Tradable and Driveable interfaces.
+ */
 public class Bike implements Drivable, Tradable{
-    private int maxispeed;
+    private int maxSpeed;
 
-    public Bike(){this.maxispeed = 35;}
+    public Bike(){this.maxSpeed = 35;}
 
     @Override
     public void upgradeSpeed() {
-        this.maxispeed = this.maxispeed + 5;
+        this.maxSpeed += 5;
     }
 
     @Override
     public void downgradeSpeed() {
-        this.maxispeed = this.maxispeed - 5;
+        this.maxSpeed -= 5;
     }
 
     @Override
     public int getMaxSpeed() {
-        return this.maxispeed;
+        return this.maxSpeed;
     }
 
     @Override
@@ -26,7 +28,7 @@ public class Bike implements Drivable, Tradable{
     @Override
     public String toString(){
         String id = super.toString();
-        return id + " (Max speed: " + this.maxispeed +")";
+        return id + " (Max speed: " + this.maxSpeed +")";
     }
 
 

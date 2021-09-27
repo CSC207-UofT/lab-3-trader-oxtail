@@ -31,7 +31,7 @@ public class BikeTest {
         assertEquals(30, b.getMaxSpeed());
     }
 
-    // TESTS IMPLEMENTED METHOD FOR TRADEABLE INTERFACE
+    // TESTS IMPLEMENTED METHOD FOR TRADABLE INTERFACE
 
     @Test(timeout = 50)
     public void TestGetPrice() {
